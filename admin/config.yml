@@ -7,19 +7,19 @@ backend:
 media_folder: "img/uploads"
 
 collections:
-  - name: "post"
-    label: "Articles"
+  - name: "case"
+    label: "les cas"
     folder: "_posts"
     sort: "date:desc"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", default: "post"}
-      - {label: "Titre", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Contenu", name: "body", widget: "markdown"}
-      - {label: "Categorie", name: "categories", widget: "string"}
-    meta:
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "DD-MM-YYYY hh:mm:ss"}
+      - {label: "Layout", name: "layout",  widget: "hidden", default: "default"}
+      - {label: "Titre", name: "modal-id", widget: "string", tagname: "h1"}
+      - {label: "Date", name: "project-date", widget: "datetime", format: "MM-YYYY"}
+      - {label: "Image", name: "thumbnail", widget: "image"}
+      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Categorie", name: "category", widget: "string"}
 
   - name: "section"
     label: "Section"
