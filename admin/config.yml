@@ -4,7 +4,7 @@ backend:
   site_domain: eig2.etalab.gouv.fr
   repo: Skeith918/blog2-eig2
 
-media_folder: "img/uploads"
+media_folder: "img/portfolio"
 
 collections:
   - name: "case"
